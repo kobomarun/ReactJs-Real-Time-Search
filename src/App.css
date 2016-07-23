@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  height: 20px;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
+
+.olu-search-container {
+  margin-top: 150px;
+}
+
+.olu-search-container h1 {
+  width: 100%;
+  font-size: 30px;
+  color: #ff0000;
+}
+
+.olu-search-container small {
+  font-size: 13px;
+  color: #777;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.main-container {
+  margin-top: 30px;
+  margin-left: 320px;
+  width: 780px;
+}
+.show-search {
+  margin-top: -15px;
+  margin-left: 290px;
+  width: 500px;
+  height: 30px;
+  font-size: 20px;
+  color: #333;
+  text-align: left;
+}
+
+.olu-search-container input[type="text"] {
+  padding: 5px;
+  width: 700px;
+  height: 30px;
+  font-size: 20px;
+  border: 1px solid #555;
+}
+.app-list {
+  position: relative;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.app-list td {
+  list-style: none;
+  display: inline-block;
+  font-size: 18px;
+  text-align: left;
+}
+
+.app-list td:first-child {
+  width: 300px;
+  font-size: 20px;
+  color: #ff0000;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
