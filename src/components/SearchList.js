@@ -12,7 +12,7 @@ const SearchList = (props) => {
           <tbody>
           <tr>
             <td>{list.name}</td>
-            <td>{list.url}</td>
+            <td><a href={list.url} target="_blank">{list.url}</a></td>
           </tr>
           </tbody>
           </table>

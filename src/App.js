@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Search from './components/Search.js';
 import SearchList from './components/SearchList.js';
+import Header from './components/Header.js';
 
 class App extends Component {
   constructor(props) {
@@ -34,17 +34,18 @@ class App extends Component {
     }
 
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
+      <div className="olu-search">
+       <Header />
         <div className="olu-search-container">
           <h1> Search for All Javascript Librariess and Framework</h1>
 
           <Search onHandleSearch={this.handleSearch} handleType={this.state.search} />
+
           <SearchList libraries={libraries} search={search}/>
           </div>
+          <div className="panel panel-default">
+          <div className="panel-heading">2016. Copyright</div>
+        </div>
       </div>
     );
   }

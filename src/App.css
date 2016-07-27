@@ -1,21 +1,27 @@
-.App {
+.olu-search {
   text-align: center;
 }
 
-.App-logo {
+.olu-logo {
   animation: spin infinite 20s linear;
-  height: 80px;
+  margin-top: -20px;
+  height: 60px;
 }
 
-.App-header {
+.olu-search-header {
   height: 20px;
   padding: 20px;
   background-color: #222;
   color: white;
 }
 
+.navbar-inverse {
+  height: 70px;
+  border-radius: 0px;
+}
+
 .olu-search-container {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .olu-search-container h1 {
@@ -29,7 +35,7 @@
   color: #777;
 }
 
-.App-intro {
+.olu-intro {
   font-size: large;
 }
 
@@ -39,7 +45,7 @@
   width: 780px;
 }
 .olu-show-search {
-  margin-top: -45px;
+  margin-top: -30px;
   margin-left: 290px;
   width: 500px;
   height: 30px;
@@ -51,7 +57,7 @@
 .olu-search-container input[type="text"] {
   padding: 5px;
   width: 700px;
-  height: 30px;
+  height: 40px;
   font-size: 20px;
   border: 1px solid #555;
 }
