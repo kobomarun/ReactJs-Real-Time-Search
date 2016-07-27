@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Search from './components/Search.js';
+import SearchList from './components/SearchList.js';
 
 class App extends Component {
   constructor(props) {
@@ -39,34 +41,10 @@ class App extends Component {
         </div>
         <div className="olu-search-container">
           <h1> Search for All Javascript Librariess and Framework</h1>
-          <div>
-          <input 
-            type="text" 
-            placeholder="Enter your search term"
-            value={this.state.search}
-            onChange={this.handleSearch}
-            />
-            </div>
-        <small> e.g react, jquery etc..</small>
-        <div className="show-search">{this.state.search}</div>
-        <section className="main-container">
-      
-         { search.length > 0 &&
-          libraries.map((list) => {
-          return (
-            <table className="app-list" key={list.url}>
-            <tbody>
-            <tr>
-              <td>{list.name}</td>
-              <td>{list.url}</td>
-            </tr>
-            </tbody>
-            </table>
-          );
-          })}
-        
-        </section>
-        </div>
+
+          <Search onHandleSearch={this.handleSearch} handleType={this.state.search} />
+          <SearchList libraries={libraries} search={search}/>
+          </div>
       </div>
     );
   }
